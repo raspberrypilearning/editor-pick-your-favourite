@@ -1,0 +1,4 @@
+name: 'Pick your favourite...'
+identifier: 'pick-your-favourite-starter'
+type: 'html'
+build: true
