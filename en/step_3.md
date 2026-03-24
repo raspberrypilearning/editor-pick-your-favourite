@@ -1,10 +1,12 @@
 <h2 class="c-project-heading--task">Show the first choice</h2>
 
 --- task ---
+
 Write the JavaScript that fills the page with content when the first option is clicked.
---- /task ---
 
 Start by making one choice work from end to end. Once you can click one button and see your page update, the other choices will be much quicker to add.
+
+--- /task ---
 
 <div class="c-project-code">
 
@@ -87,6 +89,8 @@ Use your own heading and facts if you picked a different topic, but keep the sam
 <h2 class="c-project-heading--task">Test</h2>
 
 --- task ---
+
 Run the project, open the menu, click your first option, and confirm the title and all three content sections appear.
+
 --- /task ---
 

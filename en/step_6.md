@@ -1,7 +1,9 @@
 <h2 class="c-project-heading--task">Animate the sections</h2>
 
 --- task ---
+
 Use intersection observers to animate each content section when it scrolls into view.
+
 --- /task ---
 
 The first code snippet hides each content box until the animation starts. The second code snippet watches each slot and adds an animation class at the right moment.
@@ -81,6 +83,8 @@ You can swap the animation class names if you want a different effect for each s
 <h2 class="c-project-heading--task">Test</h2>
 
 --- task ---
+
 Run the project, choose an option, scroll down, and confirm each section appears with an animation instead of showing straight away.
+
 --- /task ---
 

@@ -1,10 +1,14 @@
 <h2 class="c-project-heading--task">Add the other choices</h2>
 
 --- task ---
+
 Create the other two functions so each menu option shows different content on the page.
---- /task ---
 
 You already know the pattern from your first function, so now you can copy it and swap in the class names, titles, and facts for your second and third choices.
+
+If your project is not about dinosaurs, change the text so each option shows the visitor something about your own topic.
+
+--- /task ---
 
 <div class="c-project-code">
 
@@ -92,11 +96,11 @@ function option3() {
 
 </div>
 
-If your project is not about dinosaurs, change the text so each option teaches the visitor something about your own topic.
-
 <h2 class="c-project-heading--task">Test</h2>
 
 --- task ---
+
 Run the project and confirm each menu choice shows a different title, different colours, and different content.
+
 --- /task ---
 

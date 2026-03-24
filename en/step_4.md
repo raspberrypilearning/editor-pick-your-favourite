@@ -1,7 +1,11 @@
 <h2 class="c-project-heading--task">Add your colours</h2>
 
 --- task ---
+
 Create colour variables and CSS classes so each choice can give the page its own look.
+
+Replace the example class names and colours with ones that match your own topic.
+
 --- /task ---
 
 The first code snippet stores the colours in `default.css`. The second code snippet uses those colours in `style.css`.
@@ -248,11 +252,11 @@ button {
 
 </div>
 
-Replace the example class names and colours with ones that match your own topic.
-
 <h2 class="c-project-heading--task">Test</h2>
 
 --- task ---
+
 Run the project, click your first option, and confirm the page background and content boxes change to match that choice.
+
 --- /task ---
 

@@ -1,12 +1,14 @@
 <h2 class="c-project-heading--task">Build the page</h2>
 
---- task ---
 Choose a theme and create the page structure for your fan website.
---- /task ---
 
 Pick something you would enjoy sharing, then choose three options inside that theme. The dinosaur example uses three species, but your project could be about teams, games, films, fashion, or anything else you love.
 
-Open the starter project and update the title, the menu text, and the empty sections that will hold your content.
+--- task ---
+
+Update the title, the menu text, and the empty sections that will hold your content.
+
+--- /task ---
 
 <div class="c-project-code">
 
@@ -53,6 +55,8 @@ Replace the dinosaur names with your own choices if you are making a different f
 <h2 class="c-project-heading--task">Test</h2>
 
 --- task ---
+
 Run the project and confirm you can see your menu at the top of the page and an instruction heading in the middle.
+
 --- /task ---
 

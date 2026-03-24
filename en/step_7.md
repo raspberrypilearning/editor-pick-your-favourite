@@ -1,7 +1,9 @@
 <h2 class="c-project-heading--task">Remember the last choice</h2>
 
 --- task ---
+
 Use local storage so the page remembers the visitor's last choice and add a reset button to clear it.
+
 --- /task ---
 
 The first code snippet saves the selected option, restores it when the page loads, and clears it again when the visitor resets the page.
@@ -182,6 +184,8 @@ line_highlights: 19
 <h2 class="c-project-heading--task">Test</h2>
 
 --- task ---
+
 Run the project, choose an option, run it again to check the page remembers that choice, then click Reset and confirm the instructions come back.
+
 --- /task ---
 
