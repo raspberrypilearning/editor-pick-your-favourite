@@ -65,7 +65,7 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 40
-line_highlights: 44,91,118-227
+line_highlights: 44,91,117-224
 ---
 nav {
   height: 60px;
@@ -134,6 +134,8 @@ button {
   padding: 5px;
   font-size: 32px;
 }
+
+/* Body Classes */
 
 #slot-1 {
   grid-row-start: 2;
