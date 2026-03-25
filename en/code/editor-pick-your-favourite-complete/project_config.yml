@@ -1,4 +1,4 @@
 name: 'Pick your favourite dinosaur'
-identifier: 'editor-pick-your-favourite-dinosaur'
+identifier: 'editor-pick-your-favourite-complete'
 type: 'html'
 build: true
