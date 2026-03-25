@@ -135,16 +135,13 @@ button {
   font-size: 32px;
 }
 
-/* Body Classes */
+/* Slot 1 classes */
 
 
 #slot-1 {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-
-/* Slot 1 classes */
-
 
 #slot-1.trex {
   background-color: var(--slot-1-t-rex);
@@ -170,6 +167,9 @@ button {
     color: white;
   }
 }
+
+/* Slot 2 classes */
+
 
 #slot-2 {
   grid-row-start: 4;
@@ -202,6 +202,9 @@ button {
     color: white;
   }
 }
+
+/* Slot 3 classes */
+
 
 #slot-3 {
   grid-row-start: 6;
@@ -254,6 +257,10 @@ button {
   background-color: rgb(32, 78, 55);
   color: black;
 }
+
+/* Animations */
+
+
 --- /code ---
 
 </div>
