@@ -18,7 +18,7 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 8
-line_highlights: 8,14-18,25-32
+line_highlights: 8,14-18,24-32
 ---
 <title>Dinosaurs: ROAR!</title>
   </head>
