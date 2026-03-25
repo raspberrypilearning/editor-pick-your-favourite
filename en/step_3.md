@@ -2,6 +2,12 @@
 
 --- task ---
 
+Open `scripts.js`
+
+--- /task ---
+
+--- task ---
+
 Write the JavaScript that fills the page with content when the first option is clicked.
 
 Start by making one choice work from end to end. Once you can click one button and see your page update, the other choices will be much quicker to add.
@@ -16,7 +22,7 @@ language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 13
-line_highlights: 23-37,41-74
+line_highlights: 26, 29, 32, 35, 41-74
 ---
 // Constants
 const body = document.querySelector("body");
@@ -27,7 +33,7 @@ const slot1 = document.querySelector("#slot-1");
 const slot2 = document.querySelector("#slot-2");
 const slot3 = document.querySelector("#slot-3");
 
-// Clear
+// Clear function
 function clear() {
   body.classList = "";
 

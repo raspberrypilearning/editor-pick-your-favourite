@@ -65,7 +65,7 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 43
-line_highlights: 47,94,117-217
+line_highlights: 44,91,114-223
 ---
 nav {
   height: 60px;
@@ -139,6 +139,8 @@ button {
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
+/* Slot 1 classes */
 
 #slot-1.trex {
   background-color: var(--slot-1-t-rex);
