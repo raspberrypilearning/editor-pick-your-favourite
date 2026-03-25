@@ -65,7 +65,7 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 40
-line_highlights: 44,91,119-226
+line_highlights: 44,91,111-229
 ---
 nav {
   height: 60px;
