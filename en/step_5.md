@@ -4,11 +4,11 @@
 
 Create the other two functions so each menu option shows different content on the page.
 
+--- /task ---
+
 You already know the pattern from your first function, so now you can copy it and swap in the class names, titles, and facts for your second and third choices.
 
 If your project is not about dinosaurs, change the text so each option shows the visitor something about your own topic.
-
---- /task ---
 
 <div class="c-project-code">
 
@@ -17,8 +17,8 @@ If your project is not about dinosaurs, change the text so each option shows the
 language: javascript
 filename: scripts.js
 line_numbers: true
-line_number_start: 78
-line_highlights: 79-152
+line_number_start: 76
+line_highlights: 77-150
 ---
 // Option 2
 function option2() {

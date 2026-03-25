@@ -17,8 +17,8 @@ Code snippet 1
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 103
-line_highlights: 109
+line_number_start: 100
+line_highlights: 106
 ---
 .content {
   width: 100%;
@@ -85,6 +85,8 @@ You can swap the animation class names if you want a different effect for each s
 --- task ---
 
 Run the project, choose an option, scroll down, and confirm each section appears with an animation instead of showing straight away.
+
+Make sure your browser window is wide enough to trigger the animations.
 
 --- /task ---
 
