@@ -1,62 +1,97 @@
-<h2 class="c-project-heading--task">Build the page</h2>
+<h2 class="c-project-heading--task">Show the first choice</h2>
 
-Choose a theme and create the page structure for your fan website.
+### Step 1
 
-Pick something you would enjoy sharing, then choose three options inside that theme. The dinosaur example uses three species, but your project could be about teams, games, films, fashion, or anything else you love.
+Open `scripts.js`
 
---- task ---
 
-Update the title, the menu text, and the empty sections that will hold your content.
+### Step 2
 
---- /task ---
+Write the JavaScript that fills the page with content when the first option is clicked.
+
+Start by making one choice work from end to end. Once you can click one button and see your page update, the other choices will be much quicker to add.
+
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: index.html
+language: javascript
+filename: scripts.js
 line_numbers: true
-line_number_start: 8
-line_highlights: 8,14-18,24-32
+line_number_start: 13
+line_highlights: 26, 29, 32, 35, 41-74
 ---
-<title>Dinosaurs: ROAR!</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="dropdown">
-          <button onclick="openDropdown()">Choose Dinosaur &#9207;</button>
-          <div id="dropdown-options">
-            <button onclick="option1()">Tyrannosaurus Rex</button>
-            <button onclick="option2()">Triceratops</button>
-            <button onclick="option3()">Stegosaurus</button>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="instruction">
-        <h1>Select a dinosaur &#129429;</h1>
-      </section>
-      <section id="content-holder">
-        <h1 id="title">Dinosaur</h1>
-        <div id="slot-1" class="content"></div>
-        <div id="slot-2" class="content"></div>
-        <div id="slot-3" class="content"></div>
-      </section>
-    </main>
+// Constants
+const body = document.querySelector("body");
+const instruction = document.querySelector("#instruction");
+const content = document.querySelector("#content-holder");
+const title = document.querySelector("#title");
+const slot1 = document.querySelector("#slot-1");
+const slot2 = document.querySelector("#slot-2");
+const slot3 = document.querySelector("#slot-3");
+
+// Clear function
+function clear() {
+  body.classList = "";
+
+  title.innerHTML = "";
+
+  slot1.classList = "content";
+  slot1.innerHTML = "";
+
+  slot2.classList = "content";
+  slot2.innerHTML = "";
+
+  slot3.classList = "content";
+  slot3.innerHTML = "";
+
+  dropdown.classList.remove("open");
+}
+
+// Option 1
+function option1() {
+  clear();
+
+  instruction.style.display = "none";
+  content.style.display = "grid";
+
+  body.classList.add("trex");
+
+  title.innerHTML = "T-Rex <br> &#129430";
+
+  slot1.classList.add("trex");
+  slot1.innerHTML =
+    "<h1>Anatomy and Characteristics</h1> \n \
+      <p>One of the largest meat-eating dinosaurs</p> \n \
+      <p>Powerful hind limbs</p> \n \
+      <p>Massive skull with sharp teeth</p> \n \
+      <p>Tiny, two-fingered forelimbs</p>";
+
+  slot2.classList.add("trex");
+  slot2.innerHTML =
+    "<h1>Trivia</h1> \n \
+      <p>T-Rex had an huge bite force, capable of crushing bone</p> \n \
+      <p>T-Rex was a fast runner</p> \n \
+      <p>The name Tyrannosaurus Rex means tyrant lizard king in Greek</p>";
+
+  slot3.classList.add("trex");
+  slot3.innerHTML =
+    "<h1>Activity</h1> \n \
+      <ol>\n \
+      <li>Get into teams and line up at a start line</li> \n \
+      <li>Put one toy for each team member at the other end of the room</li> \n \
+      <li>One person from each team races to 'bite' a toy and bring it back to the team</li> \n \
+      <li>The first team to return all their toys wins!</li> </ol>";
+}
 --- /code ---
 
 </div>
 
-Replace the dinosaur names with your own choices if you are making a different fan page.
+Use your own heading and facts if you picked a different topic, but keep the same pattern: clear the page, show the content grid, then fill the three slots.
 
 <h2 class="c-project-heading--task">Test</h2>
 
---- task ---
+### Step 3
 
-Run the project and confirm you can see your menu at the top of the page and an instruction heading in the middle.
-
---- /task ---
-
+Run the project, open the menu, click your first option, and confirm the title and all three content sections appear.

@@ -6,18 +6,18 @@ version: 4
 listed: false
 copyedit: false
 last_tested: '2021-03-26'
+landing: true
 steps:
-steps:
-- title: Step 1
-- title: Step 2
-  completion:
-  - engaged
-- title: Step 3
-- title: Step 4
-- title: Step 5
-- title: Step 6
-  completion:
-  - internal
-- title: Step 7
-  completion:
-  - external
+  - title: Build the page
+  - title: Show the first choice
+    completion:
+      - engaged
+  - title: Add your colours
+  - title: Add the other choices
+    completion:
+      - internal
+  - title: Animate the sections
+    completion:
+      - external
+  - title: Challenge
+    challenge: true
