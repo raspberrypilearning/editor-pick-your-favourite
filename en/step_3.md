@@ -1,8 +1,8 @@
 <h2 class="c-project-heading--task">Add your colours</h2>
 
-### Step 1
-
 Create colour variables and CSS classes so each choice can give the page its own look.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Replace the example class names and colours with ones that match your own topic.
 
@@ -264,8 +264,8 @@ button {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Run the project, click your first option, and confirm the page background and content boxes change to match that choice.
+
+Confirm the observable result.

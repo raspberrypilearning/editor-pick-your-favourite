@@ -1,11 +1,8 @@
 <h2 class="c-project-heading--task">Show the first choice</h2>
 
-### Step 1
-
 Open `scripts.js`
 
-
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Write the JavaScript that fills the page with content when the first option is clicked.
 
@@ -90,8 +87,8 @@ function option1() {
 
 Use your own heading and facts if you picked a different topic, but keep the same pattern: clear the page, show the content grid, then fill the three slots.
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 3
+## Now run your code
 
 Run the project, open the menu, click your first option, and confirm the title and all three content sections appear.
+
+Confirm the observable result.

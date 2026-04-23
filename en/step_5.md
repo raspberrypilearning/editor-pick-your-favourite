@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Animate the sections</h2>
 
-### Step 1
-
 Use intersection observers to animate each content section when it scrolls into view.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 The first code snippet hides each content box until the animation starts. The second code snippet watches each slot and adds an animation class at the right moment.
 
@@ -79,10 +78,10 @@ slot3observer.observe(slot3);
 
 You can swap the animation class names if you want a different effect for each section.
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Run the project, choose an option, scroll down, and confirm each section appears with an animation instead of showing straight away.
 
 Make sure your browser window is wide enough to trigger the animations.
+
+Confirm the observable result.

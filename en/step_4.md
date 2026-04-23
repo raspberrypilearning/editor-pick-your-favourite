@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Add the other choices</h2>
 
-### Step 1
-
 Create the other two functions so each menu option shows different content on the page.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 You already know the pattern from your first function, so now you can copy it and swap in the class names, titles, and facts for your second and third choices.
 
@@ -95,8 +94,8 @@ function option3() {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Run the project and confirm each menu choice shows a different title, different colours, and different content.
+
+Confirm the observable result.

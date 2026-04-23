@@ -2,9 +2,9 @@
 
 Choose a theme and create the page structure for your fan website.
 
-Pick something you would enjoy sharing, then choose three options inside that theme. The dinosaur example uses three species, but your project could be about teams, games, films, fashion, or anything else you love.
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
-### Step 1
+Pick something you would enjoy sharing, then choose three options inside that theme. The dinosaur example uses three species, but your project could be about teams, games, films, fashion, or anything else you love.
 
 Update the title, the menu text, and the empty sections that will hold your content.
 
@@ -51,8 +51,8 @@ line_highlights: 8,14-18,24-32
 
 Replace the dinosaur names with your own choices if you are making a different fan page.
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Run the project and confirm you can see your menu at the top of the page and an instruction heading in the middle.
+
+Confirm the observable result.
