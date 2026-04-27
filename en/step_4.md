@@ -96,6 +96,4 @@ function option3() {
 
 ## Now run your code
 
-Run the project and confirm each menu choice shows a different title, different colours, and different content.
-
-Confirm the observable result.
+Run the project and check that each menu choice shows a different title, different colours, and different content.

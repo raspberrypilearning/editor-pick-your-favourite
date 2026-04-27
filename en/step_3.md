@@ -266,6 +266,4 @@ button {
 
 ## Now run your code
 
-Run the project, click your first option, and confirm the page background and content boxes change to match that choice.
-
-Confirm the observable result.
+Run the project, click your first option, and check that the page background and content boxes change to match that choice.

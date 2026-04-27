@@ -53,6 +53,4 @@ Replace the dinosaur names with your own choices if you are making a different f
 
 ## Now run your code
 
-Run the project and confirm you can see your menu at the top of the page and an instruction heading in the middle.
-
-Confirm the observable result.
+Run the project and check that your menu is at the top of the page and an instruction heading appears in the middle.

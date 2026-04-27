@@ -80,8 +80,6 @@ You can swap the animation class names if you want a different effect for each s
 
 ## Now run your code
 
-Run the project, choose an option, scroll down, and confirm each section appears with an animation instead of showing straight away.
-
 Make sure your browser window is wide enough to trigger the animations.
 
-Confirm the observable result.
+Run the project, choose an option, scroll down, and check that each section appears with an animation.

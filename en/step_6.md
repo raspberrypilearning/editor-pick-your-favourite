@@ -14,6 +14,4 @@ If you want a styling challenge instead, keep the same three options and improve
 
 ## Now run your code
 
-Run your project and confirm your upgrade works, whether that means a brand new option appears or your existing sections have a stronger design.
-
-Confirm the observable result.
+Run your project and check that your upgrade works, whether that means a new option appears or your sections have a stronger design.

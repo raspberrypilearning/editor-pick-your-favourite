@@ -89,6 +89,4 @@ Use your own heading and facts if you picked a different topic, but keep the sam
 
 ## Now run your code
 
-Run the project, open the menu, click your first option, and confirm the title and all three content sections appear.
-
-Confirm the observable result.
+Run the project, open the menu, click your first option, and check that the title and all three content sections appear.
