@@ -1,92 +1,17 @@
-<h2 class="c-project-heading--task">Animate the sections</h2>
+<h2 class="c-project-heading--task">Challenge</h2>
 
---- task ---
+Extend your fan website by adding another option or giving each section more styling.
 
-Use intersection observers to animate each content section when it scrolls into view.
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
---- /task ---
+## Step 1
 
-The first code snippet hides each content box until the animation starts. The second code snippet watches each slot and adds an animation class at the right moment.
+Add a fourth choice. Copy one of your existing functions, rename it, then change the class names and content so it matches your new idea.
 
-Code snippet 1
+## Step 2
 
-<div class="c-project-code">
+If you want a styling challenge instead, keep the same three options and improve the layout, colours, or text styling inside each content box.
 
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 100
-line_highlights: 106
----
-.content {
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 5px 5px black;
-  padding: 5px;
-  font-size: 32px;
-  opacity: 0;
-}
---- /code ---
+## Now run your code
 
-</div>
-
-Code snippet 2
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 155
-line_highlights: 156-184
----
-// Observers
-const slot1observer = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      slot1.classList.add("fade-in");
-    }
-  },
-  { threshold: 1 }
-);
-slot1observer.observe(slot1);
-
-const slot2observer = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      slot2.classList.add("grow-in");
-    }
-  },
-  { threshold: 1 }
-);
-slot2observer.observe(slot2);
-
-const slot3observer = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      slot3.classList.add("rise-in");
-    }
-  },
-  { threshold: 1 }
-);
-slot3observer.observe(slot3);
---- /code ---
-
-</div>
-
-You can swap the animation class names if you want a different effect for each section.
-
-<h2 class="c-project-heading--task">Test</h2>
-
---- task ---
-
-Run the project, choose an option, scroll down, and confirm each section appears with an animation instead of showing straight away.
-
-Make sure your browser window is wide enough to trigger the animations.
-
---- /task ---
-
+Run your project and check that your upgrade works, whether that means a new option appears or your sections have a stronger design.

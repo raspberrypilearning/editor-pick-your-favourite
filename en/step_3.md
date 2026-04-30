@@ -1,102 +1,269 @@
-<h2 class="c-project-heading--task">Show the first choice</h2>
+<h2 class="c-project-heading--task">Add your colours</h2>
 
---- task ---
+Create colour variables and CSS classes so each choice can give the page its own look.
 
-Open `scripts.js`
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
---- /task ---
+Replace the example class names and colours with ones that match your own topic.
 
---- task ---
 
-Write the JavaScript that fills the page with content when the first option is clicked.
+The first code snippet stores the colours in `default.css`. The second code snippet uses those colours in `style.css`.
 
-Start by making one choice work from end to end. Once you can click one button and see your page update, the other choices will be much quicker to add.
-
---- /task ---
+Code snippet 1
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: scripts.js
+language: css
+filename: default.css
 line_numbers: true
-line_number_start: 13
-line_highlights: 26, 29, 32, 35, 41-74
+line_number_start: 1
+line_highlights: 8-28
 ---
-// Constants
-const body = document.querySelector("body");
-const instruction = document.querySelector("#instruction");
-const content = document.querySelector("#content-holder");
-const title = document.querySelector("#title");
-const slot1 = document.querySelector("#slot-1");
-const slot2 = document.querySelector("#slot-2");
-const slot3 = document.querySelector("#slot-3");
+:root {
+  /* Font variable */
+  --main-font: "sans-serif";
 
-// Clear function
-function clear() {
-  body.classList = "";
+  /* Base Colours */
+  --body-background: #ffffff;
+  --body-text-colour: #000000;
+  --nav-bar: #ffffff;
 
-  title.innerHTML = "";
+  /* Option Body classes */
+  --body-t-rex: #ffffff;
+  --body-triceratops: #ffffff;
+  --body-stegosaurus: #ffffff;
 
-  slot1.classList = "content";
-  slot1.innerHTML = "";
+  /* Slot 1 colours */
+  --slot-1-t-rex: #00b2a9;
+  --slot-1-triceratops: #1c2c5b;
+  --slot-1-stegosaurus: #132257;
 
-  slot2.classList = "content";
-  slot2.innerHTML = "";
+  /* Slot 2 colours */
+  --slot-2-t-rex: #00b2a9;
+  --slot-2-triceratops: #ffc659;
+  --slot-2-stegosaurus: #131f53;
 
-  slot3.classList = "content";
-  slot3.innerHTML = "";
-
-  dropdown.classList.remove("open");
-}
-
-// Option 1
-function option1() {
-  clear();
-
-  instruction.style.display = "none";
-  content.style.display = "grid";
-
-  body.classList.add("trex");
-
-  title.innerHTML = "T-Rex <br> &#129430";
-
-  slot1.classList.add("trex");
-  slot1.innerHTML =
-    "<h1>Anatomy and Characteristics</h1> \n \
-      <p>One of the largest meat-eating dinosaurs</p> \n \
-      <p>Powerful hind limbs</p> \n \
-      <p>Massive skull with sharp teeth</p> \n \
-      <p>Tiny, two-fingered forelimbs</p>";
-
-  slot2.classList.add("trex");
-  slot2.innerHTML =
-    "<h1>Trivia</h1> \n \
-      <p>T-Rex had an huge bite force, capable of crushing bone</p> \n \
-      <p>T-Rex was a fast runner</p> \n \
-      <p>The name Tyrannosaurus Rex means tyrant lizard king in Greek</p>";
-
-  slot3.classList.add("trex");
-  slot3.innerHTML =
-    "<h1>Activity</h1> \n \
-      <ol>\n \
-      <li>Get into teams and line up at a start line</li> \n \
-      <li>Put one toy for each team member at the other end of the room</li> \n \
-      <li>One person from each team races to 'bite' a toy and bring it back to the team</li> \n \
-      <li>The first team to return all their toys wins!</li> </ol>";
+  /* Slot 3 colours */
+  --slot-3-t-rex: #00b2a9;
+  --slot-3-triceratops: #ec3325;
+  --slot-3-stegosaurus: #131f53;
 }
 --- /code ---
 
 </div>
 
-Use your own heading and facts if you picked a different topic, but keep the same pattern: clear the page, show the content grid, then fill the three slots.
+Code snippet 2
 
-<h2 class="c-project-heading--task">Test</h2>
+<div class="c-project-code">
 
---- task ---
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 40
+line_highlights: 44,91,111-229
+---
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #9385bf;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-Run the project, open the menu, click your first option, and confirm the title and all three content sections appear.
+.dropdown {
+  width: 300px;
+  font-size: large;
+  padding: 5px;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
 
---- /task ---
+button {
+  width: 100%;
+  border: none;
+  background-color: white;
+  font-size: 32px;
+  font-family: inherit;
+}
 
+#dropdown-options {
+  position: relative;
+  display: none;
+  color: white;
+  min-width: 140px;
+  text-align: center;
+  z-index: 1;
+}
+
+#dropdown-options.open {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#instruction {
+  height: 100vh;
+
+  h1 {
+      font-size: 62px;
+  }
+}
+
+#content-holder {
+  display: none;
+  grid-template-rows: repeat(3, 100vh auto);
+}
+
+#content-holder > h1 {
+  font-size: 3em;
+  margin: auto;
+}
+
+.content {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+  padding: 5px;
+  font-size: 32px;
+}
+
+/* Slot 1 classes */
+
+
+#slot-1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#slot-1.trex {
+  background-color: var(--slot-1-t-rex);
+
+  h1 {
+    color: #f6eb61;
+  }
+}
+
+#slot-1.triceratops {
+  background-color: var(--slot-1-triceratops);
+
+  h1 {
+    color: rgb(255, 198, 89);
+  }
+}
+
+#slot-1.stegosaurus {
+  background-color: var(--slot-1-stegosaurus);
+  color: white;
+
+  h1 {
+    color: white;
+  }
+}
+
+/* Slot 2 classes */
+
+
+#slot-2 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#slot-2.trex {
+  background-color: var(--slot-2-t-rex);
+  color: white;
+
+  h1 {
+    color: #f6eb61;
+  }
+}
+
+#slot-2.triceratops {
+  background-color: var(--slot-2-triceratops);
+  color: black;
+
+  h1 {
+    color: rgb(28, 44, 91);
+  }
+}
+
+#slot-2.stegosaurus {
+  background-color: var(--slot-2-stegosaurus);
+  color: white;
+
+  h1 {
+    color: white;
+  }
+}
+
+/* Slot 3 classes */
+
+
+#slot-3 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+#slot-3.trex {
+  background-color: var(--slot-3-t-rex);
+  text-align: left;
+
+  h1 {
+    color: #f6eb61;
+    text-align: center;
+  }
+}
+
+#slot-3.triceratops {
+  background-color: var(--slot-3-triceratops);
+  text-align: left;
+  color: white;
+
+  h1 {
+    color: rgb(255, 198, 89);
+    text-align: center;
+  }
+}
+
+#slot-3.stegosaurus {
+  background-color: var(--slot-3-stegosaurus);
+  color: white;
+  text-align: left;
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.trex {
+  background-color: #41220f;
+  color: white;
+}
+
+.triceratops {
+  background-color: #6a7029;
+  color: white;
+}
+
+.stegosaurus {
+  background-color: rgb(32, 78, 55);
+  color: black;
+}
+
+/* Animations */
+
+
+--- /code ---
+
+</div>
+
+## Now run your code
+
+Run the project, click your first option, and check that the page background and content boxes change to match that choice.
