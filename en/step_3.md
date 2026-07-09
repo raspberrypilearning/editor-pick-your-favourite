@@ -1,26 +1,14 @@
-<h2 class="c-project-heading--task">Add your colours</h2>
+## Add your colours
 
 Create colour variables and CSS classes so each choice can give the page its own look.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Replace the example class names and colours with ones that match your own topic.
-
 
 The first code snippet stores the colours in `default.css`. The second code snippet uses those colours in `style.css`.
 
 Code snippet 1
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: default.css
-line_numbers: true
-line_number_start: 1
-line_highlights: 8-28
----
+```css filename="default.css" line_numbers="true" line_number_start="1" line_highlights="8-28"
 :root {
   /* Font variable */
   --main-font: "sans-serif";
@@ -50,22 +38,11 @@ line_highlights: 8-28
   --slot-3-triceratops: #ec3325;
   --slot-3-stegosaurus: #131f53;
 }
---- /code ---
-
-</div>
+```
 
 Code snippet 2
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 40
-line_highlights: 44,91,111-229
----
+```css filename="style.css" line_numbers="true" line_number_start="40" line_highlights="44,91,111-229"
 nav {
   height: 60px;
   display: flex;
@@ -260,9 +237,7 @@ button {
 /* Animations */
 
 
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

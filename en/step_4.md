@@ -1,23 +1,12 @@
-<h2 class="c-project-heading--task">Add the other choices</h2>
+## Add the other choices
 
 Create the other two functions so each menu option shows different content on the page.
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 You already know the pattern from your first function, so now you can copy it and swap in the class names, titles, and facts for your second and third choices.
 
 If your project is not about dinosaurs, change the text so each option shows the visitor something about your own topic.
 
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 76
-line_highlights: 77-150
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="76" line_highlights="77-150"
 // Option 2
 function option2() {
   clear();
@@ -90,9 +79,7 @@ function option3() {
       <li>Once the plates are dry, have a Stegosaurus parade to showcase your plates</li>\n \
       <li>Share the designs and celebrate the creativity.</li></ol>";
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
