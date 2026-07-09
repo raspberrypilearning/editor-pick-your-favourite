@@ -1,24 +1,12 @@
-<h2 class="c-project-heading--task">Build the page</h2>
+## Build the page
 
 Choose a theme and create the page structure for your fan website.
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Pick something you would enjoy sharing, then choose three options inside that theme. The dinosaur example uses three species, but your project could be about teams, games, films, fashion, or anything else you love.
 
 Update the title, the menu text, and the empty sections that will hold your content.
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 8
-line_highlights: 8,14-18,24-32
----
+```html filename="index.html" line_numbers="true" line_number_start="8" line_highlights="8,14-18,24-32"
 <title>Dinosaurs: ROAR!</title>
   </head>
   <body>
@@ -45,9 +33,7 @@ line_highlights: 8,14-18,24-32
         <div id="slot-3" class="content"></div>
       </section>
     </main>
---- /code ---
-
-</div>
+```
 
 Replace the dinosaur names with your own choices if you are making a different fan page.
 

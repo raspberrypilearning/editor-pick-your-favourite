@@ -1,24 +1,12 @@
-<h2 class="c-project-heading--task">Show the first choice</h2>
+## Show the first choice
 
-Open `scripts.js`
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+Open `scripts.js`.
 
 Write the JavaScript that fills the page with content when the first option is clicked.
 
 Start by making one choice work from end to end. Once you can click one button and see your page update, the other choices will be much quicker to add.
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 13
-line_highlights: 26, 29, 32, 35, 41-74
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="13" line_highlights="26,29,32,35,41-74"
 // Constants
 const body = document.querySelector("body");
 const instruction = document.querySelector("#instruction");
@@ -55,7 +43,7 @@ function option1() {
 
   body.classList.add("trex");
 
-  title.innerHTML = "T-Rex <br> &#129430";
+  title.innerHTML = "T-Rex <br> &#129430;";
 
   slot1.classList.add("trex");
   slot1.innerHTML =
@@ -68,7 +56,7 @@ function option1() {
   slot2.classList.add("trex");
   slot2.innerHTML =
     "<h1>Trivia</h1> \n \
-      <p>T-Rex had an huge bite force, capable of crushing bone</p> \n \
+      <p>T-Rex had a huge bite force, capable of crushing bone</p> \n \
       <p>T-Rex was a fast runner</p> \n \
       <p>The name Tyrannosaurus Rex means tyrant lizard king in Greek</p>";
 
@@ -81,9 +69,7 @@ function option1() {
       <li>One person from each team races to 'bite' a toy and bring it back to the team</li> \n \
       <li>The first team to return all their toys wins!</li> </ol>";
 }
---- /code ---
-
-</div>
+```
 
 Use your own heading and facts if you picked a different topic, but keep the same pattern: clear the page, show the content grid, then fill the three slots.
 
